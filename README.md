@@ -28,7 +28,10 @@ it implements a simple rule:
 ## Downsides
 
 - Having to translate back to brainfuck? I suppose that could be a downside;
-- I mean, this is my child right here, how could I see any flaws in it? It's perfect.
+- It is only useful size-wise to use braincoitus when there are repetitions of 5 or more symbols in a row. That is
+  due to the fact that `(+4)` and `++++` are both 4 characters long. Below 4, you'd actually be wasting bytes if
+  you chose to use braincoitus' command;
+- I mean, this is my child right here, how could I see any big flaws with it? It's perfect.
 
 ## Examples
 
