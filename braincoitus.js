@@ -1,29 +1,34 @@
 function braincoitus(code) {
-    let i;
+    let i,w=console.warn;
     code = code.replace(/[^\(\)0-9\[\]\+\-\.\,\>\<]/g,"");
 
-    while((i = code.indexOf("(")) != -1) {
+    while((i = code.indexOf("(")) != -1 && code.indexOf(")") != -1) {
         let len,
             count = "",
             operation = code[++i],
-            new_str;
+            new_str,
+            _code = code;
 
         if(/[^\+\-\.\,\>\<]/g.test(operation)) {
-            console.warn("Invalid op " + code[i]);
-            break;
+            w("Invalid op " + code[i]);
+            return false;
         }
 
-        for(;code[++i] != ")";) count += code[i];
+        for(;code[++i]&&code[i] != ")";) count += code[i];
 
-        if(isNaN(len = +count)){
-            console.warn(count + " is NaN");
-            break;
+        if(count.trim().length == 0 || isNaN(len = +count)) {
+            w(count + " is NaN");
+            return false;
         }
 
-        for(count = len, new_str = ""; count --> 0;) {
-            new_str += operation;
-        }
-        code = code.replace("(" + operation + len + ")", new_str)
+        for(count = len, new_str = ""; count --> 0;) new_str += operation;
+
+        code = code.replace("(" + operation + len + ")", new_str);
+
+        if(_code == code && len>=0)
+            code = code.replace("(" + operation + "+" + len + ")", new_str);
+        if(_code == code && !len)
+            code = code.replace("(" + operation + ")", new_str);
     }
-    return code;
+    return code.replace(/[\(\)0-9]/g,"");
 }
