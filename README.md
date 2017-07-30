@@ -56,7 +56,8 @@ in braincoitus this becomes trivial and quite small. Thus, a simple **Hello, Wor
     braincoitus
 <br>
 Or perhaps you'd prefer a real use case:
-`yapi.b`, by Felix Nawothnig <felix.nawothnig@t-online.de>, a program that calculates digits of pi.
+
+`yapi.b`, by [Felix Nawothnig](mailto:felix.nawothnig@t-online.de), a program that calculates digits of pi.
 
     [ braincoitus code (554 bytes) ]
     >(+15)[<+(>8)(+10)(<7)-]>(+5)[<(+9)>-]+(>6)+[<<+++[>>[-<]<[>]<-]>>[>+>]<[<]>]>[[->>>>+<<<<]>>>+++>-]<[<<<<](<8)+[-(>12)[<+[->>>>+<<<<](>5)]<<<<[(>5)[<<<<+>>>>-](<5)-[<<(+10)>>-]>>>[<<[<+<<+>>>-]<[>+<-]<++<<+(>6)-]<<[-]<<-<[->>+<-[>>>]>[[<+>-]>+>>](<5)]>[-]>+<<<-[>>+<<-]<]<<<<+(>8)[-]>[<<<+>>>-]<<(+10)<[->>+<-[>>>]>[[<+>-]>+>>](<5)]>[-]>+>[<<+<+>>>-]<<<<+<+>>[-[-[-[-[-[-[-[-[-<->[-<+<->>]]]]]]]]]]<[(+5)[<<<(+8)<(+8)>>>>-]<<<<+<->>>>[>+<<<(+9)<->>>-](<5)[>>+<<-]+<[->-<]>[>>.<<<<[+.[-]]>>-]>[>>.<<-]>[-]>[-]>>>[>>[(<8)+(>8)-]<<-]]>>[-]<<<[-](<8)](+10).
