@@ -9,7 +9,7 @@
 Recently, I've been working with brainfuck quite a lot. And it got me thinking: "Heck, do I really have to type and count 100 '>'
 signs every time I want to move to some far away cell? Isn't there a quicker way?"
 
-And to be completely honest, I did no research to find out. I took it as my mission to develop a simple solution that cound end
+And to be completely honest, I did no research to find out. I took it as my mission to develop a simple solution that could end
 my suffering.
 
 With that, came **BrainCoitus**. It is a superset of brainfuck, meaning that every brainfuck code is also valid braincoitus, but
